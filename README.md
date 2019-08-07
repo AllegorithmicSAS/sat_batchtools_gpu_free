@@ -88,6 +88,7 @@ An example of how to use it:
 ```
 
 Be careful! be sure to use the path **/inputdir and outputdir/** in the options flags. They correspond to the mapped volumes of docker.
+
 Don't care to this output. 
 ```buildoutcfg
 _XSERVTransmkdir: ERROR: euid != 0,directory /tmp/.X11-unix will not be created.
