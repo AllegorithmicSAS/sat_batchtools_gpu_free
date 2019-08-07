@@ -46,7 +46,7 @@ Once everything is correctly installed and the service started. We can go throug
 ### SAT's Dockerfile
 First download the repository and change dir: 
 ```buildoutcfg
-git clone https://github.com/AllegorithmicSAS/sat_batchtools_gpu_free
+git clone https://github.com/AllegorithmicSAS/sat_batchtools_gpu_free.git
 cd sat_batchtools_gpu_free
 ```
 
