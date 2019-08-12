@@ -48,6 +48,7 @@ First download the repository and change dir:
 ```buildoutcfg
 git clone https://github.com/AllegorithmicSAS/sat_batchtools_gpu_free.git
 cd sat_batchtools_gpu_free
+chmod +x ./sat_docker.sh
 ```
 
 Next build the docker image (don't forget the dot at the end):
