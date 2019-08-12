@@ -22,3 +22,4 @@ RUN ps aux | grep X
 RUN DISPLAY=:1.0; export DISPLAY
 ENV DISPLAY=:1.0
 ADD ./__run_sat.sh /tmp/
+RUN chmod +x /tmp/__run_sat.sh
