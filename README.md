@@ -83,9 +83,11 @@ sat_docker is a command line to simplify the use of SAT's batchtools with docker
 -help                         Display help
 ```
 
-An example of how to use it:
+Few examples:
 ```buildoutcfg
 ./sat_docker -exe /opt/sat/sbsbaker -inputdir /project/export/mesh -outputdir /project/export/bakedmaps -options "position-from-mesh --inputs /inputdir/foo_mesh.fbx --highdef-mesh /inputdir/foo_mesh-hi.fbx --output-path /outputdir"
+
+./sat_docker -exe /opt/sat/sbscooker -inputdir /project/inputdir -outputdir /project/outputdir -options "/inputdir/foo.sbs --output-path /outputdir --includes /sat/resources/packages"
 ```
 
 Be careful! be sure to use the path **/inputdir and outputdir/** in the options flags. They correspond to the mapped volumes of docker.
