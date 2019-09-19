@@ -49,4 +49,4 @@ if [ -z "$exe" ]; then echo "-exe flags is missing"; exit 1; fi;
 if [ -z "$inputdir" ]; then echo "-inputdir flags is missing"; exit 1; fi;
 if [ -z "$outputdir" ]; then echo "-outputdir flags is missing"; exit 1; fi;
 if [ -z "$options" ]; then echo "-options flags is missing"; exit 1; fi; 
-docker run --user $user -it -v `dirname $exe`:/vlm -v $inputdir:/inputdir -v $outputdir:/outputdir sat:latest /tmp/__run_sat.sh `basename $exe` $options
+docker run --user $user -it -v `dirname $exe`:/vlm -v `dirname $exe`:/sat -v $inputdir:/inputdir -v $outputdir:/outputdir sat:latest /tmp/__run_sat.sh `basename $exe` $options

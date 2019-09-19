@@ -48,7 +48,7 @@ First download the repository and change dir:
 ```buildoutcfg
 git clone https://github.com/AllegorithmicSAS/sat_batchtools_gpu_free.git
 cd sat_batchtools_gpu_free
-chmod +x ./sat_docker.sh
+
 ```
 
 Next build the docker image (don't forget the dot at the end):
@@ -73,7 +73,7 @@ Now docker is ready to create a SAT container. To simplify the use we provied a 
 
 
 ### sat_docker.sh
-sat_docker.sh is a command line to simplify the use of SAT's batchtools with docker. It has few option flags:
+sat_docker is a command line to simplify the use of SAT's batchtools with docker. It has few option flags:
 ```buildoutcfg
 -exe [FILE]                   Full path of a batchtool executable, e.g /opt/sat2019.1.2/sbsbaker
 -inputdir [DIR]               Full path of the input directory, e.g /project/meshes/foo
@@ -85,7 +85,7 @@ sat_docker.sh is a command line to simplify the use of SAT's batchtools with doc
 
 An example of how to use it:
 ```buildoutcfg
-./sat_docker.sh -exe /opt/sat/sbsbaker -inputdir /project/export/mesh -outputdir /project/export/bakedmaps -options "position-from-mesh --inputs /inputdir/foo_mesh.fbx --highdef-mesh /inputdir/foo_mesh-hi.fbx --output-path /outputdir"
+./sat_docker -exe /opt/sat/sbsbaker -inputdir /project/export/mesh -outputdir /project/export/bakedmaps -options "position-from-mesh --inputs /inputdir/foo_mesh.fbx --highdef-mesh /inputdir/foo_mesh-hi.fbx --output-path /outputdir"
 ```
 
 Be careful! be sure to use the path **/inputdir and outputdir/** in the options flags. They correspond to the mapped volumes of docker.
