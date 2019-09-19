@@ -72,7 +72,7 @@ sat                 latest              f35ce67e8ad0        About a minute ago  
 Now docker is ready to create a SAT container. To simplify the use we provied a script which wrap the docker command. 
 
 
-### sat_docker.sh
+### sat_docker command line
 sat_docker is a command line to simplify the use of SAT's batchtools with docker. It has few option flags:
 ```buildoutcfg
 -exe [FILE]                   Full path of a batchtool executable, e.g /opt/sat2019.1.2/sbsbaker
@@ -85,9 +85,13 @@ sat_docker is a command line to simplify the use of SAT's batchtools with docker
 
 ### volumes mapping
 By default there is a docker mapping volumes:
+
 -inputdir value is mapped to the docker `/inputdir` path
+
 -outputdir value is mapped to the docker `/outputdir` path
+
 -sat installation dir is mapped to the `/sat` path
+
 
 Few examples:
 ```buildoutcfg
