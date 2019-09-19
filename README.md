@@ -83,6 +83,12 @@ sat_docker is a command line to simplify the use of SAT's batchtools with docker
 -help                         Display help
 ```
 
+### volumes mapping
+By default there is a docker mapping volumes:
+-inputdir value is mapped to the docker `/inputdir` path
+-outputdir value is mapped to the docker `/outputdir` path
+-sat installation dir is mapped to the `/sat` path
+
 Few examples:
 ```buildoutcfg
 ./sat_docker -exe /opt/sat/sbsbaker -inputdir /project/export/mesh -outputdir /project/export/bakedmaps -options "position-from-mesh --inputs /inputdir/foo_mesh.fbx --highdef-mesh /inputdir/foo_mesh-hi.fbx --output-path /outputdir"
